@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Validation Project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="heading">Create Account</h1>
+        </div>
+        <form id="inputs">
+            <div class="input-field">
+                <label id="username-label" for="username">Username
+                    <input 
+                     id="username"
+                     placeholder="John Doe"
+                     type="text"
+                     />
+                </label>
+                <small class="error"></small>
+            </div>
+               
+            <div class="input-field">
+                <label id="email-label" for="email">Email
+                    <input 
+                     id="email"
+                     placeholder="abc@email.com"
+                     type="email"
+                     onmousemove="removeError()"
+                     />
+                </label>
+                <small class="error"></small>
+            </div>
+               
+            <div class="input-field">
+                <label id="password-label" for="password">Password
+                    <input 
+                     id="password"
+                     placeholder="********"
+                     type="password"
+                     />
+                </label>
+                <small class="error"></small>
+            </div>
+               <div class="input-field">
+                 <label id="checkPassword-label" for="checkPassword">Confirm Password
+                    <input 
+                     id="checkPassword"
+                     placeholder="********"
+                     type="password"
+                     />
+                </label>
+                <small class="error">asdf</small>
+               </div>
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
